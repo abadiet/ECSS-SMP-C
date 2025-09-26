@@ -39,9 +39,8 @@ CW(_ITypeRegistry)
     );
 }
 
-/*
 CW(CW_root_Smp_Publication, IType) *
-CW(GetType)
+CW(GetTypePrimitiveTypeKind)
 (
     CW() * self,
     CW(CW_root_Smp, PrimitiveTypeKind) type
@@ -53,7 +52,7 @@ CW(GetType)
 }
 
 CW(CW_root_Smp_Publication, IType) *
-CW(GetType)
+CW(GetTypeUuid)
 (
     CW() * self,
     CW(CW_root_Smp, Uuid) * typeUuid
@@ -63,7 +62,6 @@ CW(GetType)
         *static_cast<Smp::Uuid*>(typeUuid)
     ));
 }
-*/
 
 CW(CW_root_Smp_Publication, IType) *
 CW(AddFloatType)

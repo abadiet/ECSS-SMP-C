@@ -39,9 +39,8 @@ CW(_IPublishField)
     );
 }
 
-/*
 CW(CW_root_Smp, IField) *
-CW(PublishField)
+CW(PublishFieldBool)
 (
     CW() * self,
     CW(CW_root_Smp, String8) name,
@@ -65,7 +64,7 @@ CW(PublishField)
 }
 
 CW(CW_root_Smp, IField) *
-CW(PublishField)
+CW(PublishFieldChar8)
 (
     CW() * self,
     CW(CW_root_Smp, String8) name,
@@ -89,7 +88,7 @@ CW(PublishField)
 }
 
 CW(CW_root_Smp, IField) *
-CW(PublishField)
+CW(PublishFieldInt8)
 (
     CW() * self,
     CW(CW_root_Smp, String8) name,
@@ -113,7 +112,7 @@ CW(PublishField)
 }
 
 CW(CW_root_Smp, IField) *
-CW(PublishField)
+CW(PublishFieldInt16)
 (
     CW() * self,
     CW(CW_root_Smp, String8) name,
@@ -137,7 +136,7 @@ CW(PublishField)
 }
 
 CW(CW_root_Smp, IField) *
-CW(PublishField)
+CW(PublishFieldInt32)
 (
     CW() * self,
     CW(CW_root_Smp, String8) name,
@@ -161,7 +160,7 @@ CW(PublishField)
 }
 
 CW(CW_root_Smp, IField) *
-CW(PublishField)
+CW(PublishFieldInt64)
 (
     CW() * self,
     CW(CW_root_Smp, String8) name,
@@ -185,7 +184,7 @@ CW(PublishField)
 }
 
 CW(CW_root_Smp, IField) *
-CW(PublishField)
+CW(PublishFieldUInt8)
 (
     CW() * self,
     CW(CW_root_Smp, String8) name,
@@ -209,7 +208,7 @@ CW(PublishField)
 }
 
 CW(CW_root_Smp, IField) *
-CW(PublishField)
+CW(PublishFieldUInt16)
 (
     CW() * self,
     CW(CW_root_Smp, String8) name,
@@ -233,7 +232,7 @@ CW(PublishField)
 }
 
 CW(CW_root_Smp, IField) *
-CW(PublishField)
+CW(PublishFieldUInt32)
 (
     CW() * self,
     CW(CW_root_Smp, String8) name,
@@ -257,7 +256,7 @@ CW(PublishField)
 }
 
 CW(CW_root_Smp, IField) *
-CW(PublishField)
+CW(PublishFieldUInt64)
 (
     CW() * self,
     CW(CW_root_Smp, String8) name,
@@ -281,7 +280,7 @@ CW(PublishField)
 }
 
 CW(CW_root_Smp, IField) *
-CW(PublishField)
+CW(PublishFieldFloat32)
 (
     CW() * self,
     CW(CW_root_Smp, String8) name,
@@ -305,7 +304,7 @@ CW(PublishField)
 }
 
 CW(CW_root_Smp, IField) *
-CW(PublishField)
+CW(PublishFieldFloat64)
 (
     CW() * self,
     CW(CW_root_Smp, String8) name,
@@ -329,7 +328,7 @@ CW(PublishField)
 }
 
 CW(CW_root_Smp, IField) *
-CW(PublishField)
+CW(PublishFieldVoid)
 (
     CW() * self,
     CW(CW_root_Smp, String8) name,
@@ -364,11 +363,9 @@ CW(PublishField)
         static_cast<Smp::IField *>(field)
     );
 }
-*/
 
-/*
 CW(CW_root_Smp_Publication, IPublishField) *
-CW(PublishArray)
+CW(PublishArrayShort)
 (
     CW() * self,
     CW(CW_root_Smp, String8) name,
@@ -412,7 +409,6 @@ CW(PublishArray)
         static_cast<Smp::Bool>(output)
     ));
 }
-*/
 
 CW(CW_root_Smp_Publication, IPublishField) *
 CW(PublishStructure)

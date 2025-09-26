@@ -47,9 +47,8 @@ CW(_AnySimple)
     );
 }
 
-/*
 void
-CW(SetValue)
+CW(SetValueBool)
 (
     CW() * self,
     CW(CW_root_Smp, PrimitiveTypeKind) kind,
@@ -62,7 +61,7 @@ CW(SetValue)
 }
 
 void
-CW(SetValue)
+CW(SetValueChar8)
 (
     CW() * self,
     CW(CW_root_Smp, PrimitiveTypeKind) kind,
@@ -75,7 +74,7 @@ CW(SetValue)
 }
 
 void
-CW(SetValue)
+CW(SetValueString8)
 (
     CW() * self,
     CW(CW_root_Smp, PrimitiveTypeKind) kind,
@@ -88,7 +87,7 @@ CW(SetValue)
 }
 
 void
-CW(SetValue)
+CW(SetValueUInt8)
 (
     CW() * self,
     CW(CW_root_Smp, PrimitiveTypeKind) kind,
@@ -101,7 +100,7 @@ CW(SetValue)
 }
 
 void
-CW(SetValue)
+CW(SetValueUInt16)
 (
     CW() * self,
     CW(CW_root_Smp, PrimitiveTypeKind) kind,
@@ -114,7 +113,7 @@ CW(SetValue)
 }
 
 void
-CW(SetValue)
+CW(SetValueUInt32)
 (
     CW() * self,
     CW(CW_root_Smp, PrimitiveTypeKind) kind,
@@ -127,7 +126,7 @@ CW(SetValue)
 }
 
 void
-CW(SetValue)
+CW(SetValueUInt64)
 (
     CW() * self,
     CW(CW_root_Smp, PrimitiveTypeKind) kind,
@@ -140,7 +139,7 @@ CW(SetValue)
 }
 
 void
-CW(SetValue)
+CW(SetValueInt8)
 (
     CW() * self,
     CW(CW_root_Smp, PrimitiveTypeKind) kind,
@@ -153,7 +152,7 @@ CW(SetValue)
 }
 
 void
-CW(SetValue)
+CW(SetValueInt16)
 (
     CW() * self,
     CW(CW_root_Smp, PrimitiveTypeKind) kind,
@@ -166,7 +165,7 @@ CW(SetValue)
 }
 
 void
-CW(SetValue)
+CW(SetValueInt32)
 (
     CW() * self,
     CW(CW_root_Smp, PrimitiveTypeKind) kind,
@@ -179,7 +178,7 @@ CW(SetValue)
 }
 
 void
-CW(SetValue)
+CW(SetValueInt64)
 (
     CW() * self,
     CW(CW_root_Smp, PrimitiveTypeKind) kind,
@@ -192,7 +191,7 @@ CW(SetValue)
 }
 
 void
-CW(SetValue)
+CW(SetValueFloat32)
 (
     CW() * self,
     CW(CW_root_Smp, PrimitiveTypeKind) kind,
@@ -205,7 +204,7 @@ CW(SetValue)
 }
 
 void
-CW(SetValue)
+CW(SetValueFloat64)
 (
     CW() * self,
     CW(CW_root_Smp, PrimitiveTypeKind) kind,
@@ -216,11 +215,9 @@ CW(SetValue)
         static_cast<Smp::Float64>(value)
     );
 }
-*/
 
-/*
 CW(CW_root_Smp, Bool)
-CW(operator bool)
+CW(operatorBool)
 (
     CW() * self
 ) {
@@ -230,7 +227,7 @@ CW(operator bool)
 }
 
 CW(CW_root_Smp, Char8)
-CW(operator char)
+CW(operatorChar)
 (
     CW() * self
 ) {
@@ -240,7 +237,7 @@ CW(operator char)
 }
 
 CW(CW_root_Smp, String8)
-CW(operator const char *)
+CW(operatorString8)
 (
     CW() * self
 ) {
@@ -250,7 +247,7 @@ CW(operator const char *)
 }
 
 CW(CW_root_Smp, UInt8)
-CW(operator unsigned char)
+CW(operatorUInt8)
 (
     CW() * self
 ) {
@@ -260,7 +257,7 @@ CW(operator unsigned char)
 }
 
 CW(CW_root_Smp, UInt16)
-CW(operator unsigned short)
+CW(operatorUInt16)
 (
     CW() * self
 ) {
@@ -270,7 +267,7 @@ CW(operator unsigned short)
 }
 
 CW(CW_root_Smp, UInt32)
-CW(operator unsigned int)
+CW(operatorUInt32)
 (
     CW() * self
 ) {
@@ -280,7 +277,7 @@ CW(operator unsigned int)
 }
 
 CW(CW_root_Smp, UInt64)
-CW(operator unsigned long long)
+CW(operatorUInt64)
 (
     CW() * self
 ) {
@@ -290,7 +287,7 @@ CW(operator unsigned long long)
 }
 
 CW(CW_root_Smp, Int8)
-CW(operator signed char)
+CW(operatorInt8)
 (
     CW() * self
 ) {
@@ -300,7 +297,7 @@ CW(operator signed char)
 }
 
 CW(CW_root_Smp, Int16)
-CW(operator short)
+CW(operatorInt16)
 (
     CW() * self
 ) {
@@ -310,7 +307,7 @@ CW(operator short)
 }
 
 CW(CW_root_Smp, Int32)
-CW(operator int)
+CW(operatorInt32)
 (
     CW() * self
 ) {
@@ -320,7 +317,7 @@ CW(operator int)
 }
 
 CW(CW_root_Smp, Int64)
-CW(operator long long)
+CW(operatorInt64)
 (
     CW() * self
 ) {
@@ -330,7 +327,7 @@ CW(operator long long)
 }
 
 CW(CW_root_Smp, Float32)
-CW(operator float)
+CW(operatorFloat32)
 (
     CW() * self
 ) {
@@ -340,7 +337,7 @@ CW(operator float)
 }
 
 CW(CW_root_Smp, Float64)
-CW(operator double)
+CW(operatorFloat64)
 (
     CW() * self
 ) {
@@ -348,7 +345,6 @@ CW(operator double)
     static_cast<Smp::AnySimple *>(self)->operator double(
     ));
 }
-*/
 
 CW(CW_root_Smp, String8)
 CW(MoveString)

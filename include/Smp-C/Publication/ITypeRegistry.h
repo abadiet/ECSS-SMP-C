@@ -70,21 +70,19 @@ CW(_ITypeRegistry)
     CW() * self
 );
 
-/*
 CW(CW_root_Smp_Publication, IType) *
-CW(GetType)
+CW(GetTypePrimitiveTypeKind)
 (
     CW() * self,
     CW(CW_root_Smp, PrimitiveTypeKind) type
 );
 
 CW(CW_root_Smp_Publication, IType) *
-CW(GetType)
+CW(GetTypeUuid)
 (
     CW() * self,
     CW(CW_root_Smp, Uuid) * typeUuid
 );
-*/
 
 CW(CW_root_Smp_Publication, IType) *
 CW(AddFloatType)

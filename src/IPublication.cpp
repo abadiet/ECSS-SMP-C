@@ -45,9 +45,8 @@ CW(_IPublication)
     );
 }
 
-/*
 CW(CW_root_Smp_Publication, IPublishOperation) *
-CW(PublishOperation)
+CW(PublishOperationRaw)
 (
     CW() * self,
     CW(CW_root_Smp, String8) name,
@@ -72,11 +71,9 @@ CW(PublishOperation)
         static_cast<Smp::IOperation *>(operation)
     );
 }
-*/
 
-/*
 CW(CW_root_Smp, IProperty) *
-CW(PublishProperty)
+CW(PublishPropertyRaw)
 (
     CW() * self,
     CW(CW_root_Smp, String8) name,
@@ -105,7 +102,6 @@ CW(PublishProperty)
         static_cast<Smp::IProperty *>(property)
     );
 }
-*/
 
 CW(CW_root_Smp, IProperty) *
 CW(GetProperty)
