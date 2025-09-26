@@ -284,19 +284,18 @@ CW(RegisterFactory)
     );
 }
 
-/*
 CW(CW_root_Smp, IComponent) *
 CW(CreateInstance)
 (
     CW() * self,
-    CW(CW_root_Smp, Uuid) uuid,
+    CW(CW_root_Smp, Uuid) * uuid,
     CW(CW_root_Smp, String8) name,
     CW(CW_root_Smp, String8) description,
     CW(CW_root_Smp, IComposite) * parent
 ) {
     return static_cast<CW(CW_root_Smp, IComponent) *>(
     static_cast<Smp::ISimulator *>(self)->CreateInstance(
-        static_cast<Smp::Uuid>(uuid),
+        *static_cast<Smp::Uuid*>(uuid),
         static_cast<Smp::String8>(name),
         static_cast<Smp::String8>(description),
         static_cast<Smp::IComposite *>(parent)
@@ -307,14 +306,13 @@ CW(CW_root_Smp, IFactory) *
 CW(GetFactory)
 (
     CW() * self,
-    CW(CW_root_Smp, Uuid) uuid
+    CW(CW_root_Smp, Uuid) * uuid
 ) {
     return static_cast<CW(CW_root_Smp, IFactory) *>(
     static_cast<Smp::ISimulator *>(self)->GetFactory(
-        static_cast<Smp::Uuid>(uuid)
+        *static_cast<Smp::Uuid*>(uuid)
     ));
 }
-*/
 
 const CW(CW_root_Smp, FactoryCollection) *
 CW(GetFactories)

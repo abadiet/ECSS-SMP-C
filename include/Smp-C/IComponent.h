@@ -133,22 +133,15 @@ CW(GetFields)
 
 /* Error while processing function "GetUuid" at Smp/IComponent.h:159:34 (exported to Smp-C/IComponent.h) : Reference type is not supported: const Smp::Uuid & */
 
-CW(CW_root_Smp, AnySimple)
-CW(GetSimpleValue)
-(
-    CW() * self,
-    CW(CW_root_Smp, String8) fullName
-);
+/* Error while processing function "GetSimpleValue" at Smp/IComponent.h:177:32 (exported to Smp-C/IComponent.h) : Skipping function that returns a class/struct */
 
-/*
 void
 CW(SetSimpleValue)
 (
     CW() * self,
     CW(CW_root_Smp, String8) fullName,
-    CW(CW_root_Smp, AnySimple) value
+    CW(CW_root_Smp, AnySimple) * value
 );
-*/
 
 void
 CW(GetSimpleArrayValue)

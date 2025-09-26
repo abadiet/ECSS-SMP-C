@@ -59,21 +59,19 @@ CW(_IStructureType)
     CW() * self
 );
 
-/*
 void
 CW(AddField)
 (
     CW() * self,
     CW(CW_root_Smp, String8) name,
     CW(CW_root_Smp, String8) description,
-    CW(CW_root_Smp, Uuid) uuid,
+    CW(CW_root_Smp, Uuid) * uuid,
     CW(CW_root_Smp, UInt64) offset,
     CW(CW_root_Smp, ViewKind) view,
     CW(CW_root_Smp, Bool) state,
     CW(CW_root_Smp, Bool) input,
     CW(CW_root_Smp, Bool) output
 );
-*/
 
 /* Error while processing function "IStructureType" at Smp/Publication/IStructureType.h:37:15 (exported to Smp-C/Publication/IStructureType.h) : Skipping constructor */
 

@@ -228,7 +228,7 @@ CW(PublishField)
     CW(CW_root_Smp, String8) name,
     CW(CW_root_Smp, String8) description,
     CW(CW_root_Smp, Void) * address,
-    CW(CW_root_Smp, Uuid) typeUuid,
+    CW(CW_root_Smp, Uuid) * typeUuid,
     CW(CW_root_Smp, ViewKind) view,
     CW(CW_root_Smp, Bool) state,
     CW(CW_root_Smp, Bool) input,
@@ -280,7 +280,6 @@ CW(PublishStructure)
     CW(CW_root_Smp, Bool) state
 );
 
-/*
 CW(CW_root_Smp, IField) *
 CW(GetField)
 (
@@ -293,7 +292,6 @@ CW(GetFields)
 (
     CW() * self
 );
-*/
 
 /* Error while processing function "operator=" at Smp/Publication/IPublishField.h:54:15 (exported to Smp-C/Publication/IPublishField.h) : Reference type is not supported: IPublishField & */
 

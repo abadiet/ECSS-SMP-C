@@ -39,24 +39,22 @@ CW(_IPublishOperation)
     );
 }
 
-/*
 void
 CW(PublishParameter)
 (
     CW() * self,
     CW(CW_root_Smp, String8) name,
     CW(CW_root_Smp, String8) description,
-    CW(CW_root_Smp, Uuid) typeUuid,
+    CW(CW_root_Smp, Uuid) * typeUuid,
     CW(CW_root_Smp_Publication, ParameterDirectionKind) direction
 ) {
     static_cast<Smp::Publication::IPublishOperation *>(self)->PublishParameter(
         static_cast<Smp::String8>(name),
         static_cast<Smp::String8>(description),
-        static_cast<Smp::Uuid>(typeUuid),
+        *static_cast<Smp::Uuid*>(typeUuid),
         static_cast<Smp::Publication::ParameterDirectionKind>(direction)
     );
 }
-*/
 
 /* Error while processing function "operator=" at Smp/./Publication/IPublishOperation.h:38:15 (exported to Smp-C/Publication/IPublishOperation.h) : Reference type is not supported: IPublishOperation & */
 

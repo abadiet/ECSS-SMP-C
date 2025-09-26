@@ -70,6 +70,7 @@ CW(_ITypeRegistry)
     CW() * self
 );
 
+/*
 CW(CW_root_Smp_Publication, IType) *
 CW(GetType)
 (
@@ -77,13 +78,13 @@ CW(GetType)
     CW(CW_root_Smp, PrimitiveTypeKind) type
 );
 
-/*
 CW(CW_root_Smp_Publication, IType) *
 CW(GetType)
 (
     CW() * self,
-    CW(CW_root_Smp, Uuid) typeUuid
+    CW(CW_root_Smp, Uuid) * typeUuid
 );
+*/
 
 CW(CW_root_Smp_Publication, IType) *
 CW(AddFloatType)
@@ -91,7 +92,7 @@ CW(AddFloatType)
     CW() * self,
     CW(CW_root_Smp, String8) name,
     CW(CW_root_Smp, String8) description,
-    CW(CW_root_Smp, Uuid) typeUuid,
+    CW(CW_root_Smp, Uuid) * typeUuid,
     CW(CW_root_Smp, Float64) minimum,
     CW(CW_root_Smp, Float64) maximum,
     CW(CW_root_Smp, Bool) minInclusive,
@@ -106,7 +107,7 @@ CW(AddIntegerType)
     CW() * self,
     CW(CW_root_Smp, String8) name,
     CW(CW_root_Smp, String8) description,
-    CW(CW_root_Smp, Uuid) typeUuid,
+    CW(CW_root_Smp, Uuid) * typeUuid,
     CW(CW_root_Smp, Int64) minimum,
     CW(CW_root_Smp, Int64) maximum,
     CW(CW_root_Smp, String8) unit,
@@ -119,7 +120,7 @@ CW(AddEnumerationType)
     CW() * self,
     CW(CW_root_Smp, String8) name,
     CW(CW_root_Smp, String8) description,
-    CW(CW_root_Smp, Uuid) typeUuid
+    CW(CW_root_Smp, Uuid) * typeUuid
 );
 
 CW(CW_root_Smp_Publication, IArrayType) *
@@ -128,8 +129,8 @@ CW(AddArrayType)
     CW() * self,
     CW(CW_root_Smp, String8) name,
     CW(CW_root_Smp, String8) description,
-    CW(CW_root_Smp, Uuid) typeUuid,
-    CW(CW_root_Smp, Uuid) itemTypeUuid,
+    CW(CW_root_Smp, Uuid) * typeUuid,
+    CW(CW_root_Smp, Uuid) * itemTypeUuid,
     CW(CW_root_Smp, UInt64) itemSize,
     CW(CW_root_Smp, UInt64) arrayCount,
     CW(CW_root_Smp, Bool) simpleArray
@@ -141,7 +142,7 @@ CW(AddStringType)
     CW() * self,
     CW(CW_root_Smp, String8) name,
     CW(CW_root_Smp, String8) description,
-    CW(CW_root_Smp, Uuid) typeUuid,
+    CW(CW_root_Smp, Uuid) * typeUuid,
     CW(CW_root_Smp, UInt64) length
 );
 
@@ -151,7 +152,7 @@ CW(AddStructureType)
     CW() * self,
     CW(CW_root_Smp, String8) name,
     CW(CW_root_Smp, String8) description,
-    CW(CW_root_Smp, Uuid) typeUuid
+    CW(CW_root_Smp, Uuid) * typeUuid
 );
 
 CW(CW_root_Smp_Publication, IClassType) *
@@ -160,10 +161,9 @@ CW(AddClassType)
     CW() * self,
     CW(CW_root_Smp, String8) name,
     CW(CW_root_Smp, String8) description,
-    CW(CW_root_Smp, Uuid) typeUuid,
-    CW(CW_root_Smp, Uuid) baseClassUuid
+    CW(CW_root_Smp, Uuid) * typeUuid,
+    CW(CW_root_Smp, Uuid) * baseClassUuid
 );
-*/
 
 /* Error while processing function "operator=" at Smp/./Publication/ITypeRegistry.h:62:15 (exported to Smp-C/Publication/ITypeRegistry.h) : Reference type is not supported: ITypeRegistry & */
 

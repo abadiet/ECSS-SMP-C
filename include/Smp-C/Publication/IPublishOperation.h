@@ -59,17 +59,15 @@ CW(_IPublishOperation)
     CW() * self
 );
 
-/*
 void
 CW(PublishParameter)
 (
     CW() * self,
     CW(CW_root_Smp, String8) name,
     CW(CW_root_Smp, String8) description,
-    CW(CW_root_Smp, Uuid) typeUuid,
+    CW(CW_root_Smp, Uuid) * typeUuid,
     CW(CW_root_Smp_Publication, ParameterDirectionKind) direction
 );
-*/
 
 /* Error while processing function "operator=" at Smp/./Publication/IPublishOperation.h:38:15 (exported to Smp-C/Publication/IPublishOperation.h) : Reference type is not supported: IPublishOperation & */
 

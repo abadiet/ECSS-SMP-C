@@ -53,11 +53,7 @@ CW(_TypeNotRegistered)
     CW() * self
 );
 
-CW(CW_root_Smp, Uuid)
-CW(GetUuid)
-(
-    CW() * self
-);
+/* Error while processing function "GetUuid" at Smp/Publication/TypeNotRegistered.h:41:31 (exported to Smp-C/Publication/TypeNotRegistered.h) : Skipping function that returns a class/struct */
 
 /* Error while processing function "TypeNotRegistered" at Smp/Publication/TypeNotRegistered.h:32:15 (exported to Smp-C/Publication/TypeNotRegistered.h) : Skipping constructor */
 

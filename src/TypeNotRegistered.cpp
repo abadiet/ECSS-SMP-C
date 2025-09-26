@@ -39,15 +39,7 @@ CW(_TypeNotRegistered)
     );
 }
 
-CW(CW_root_Smp, Uuid)
-CW(GetUuid)
-(
-    CW() * self
-) {
-    return static_cast<CW(CW_root_Smp, Uuid)>(
-    static_cast<Smp::Publication::TypeNotRegistered *>(self)->GetUuid(
-    ));
-}
+/* Error while processing function "GetUuid" at Smp/Publication/TypeNotRegistered.h:41:31 (exported to Smp-C/Publication/TypeNotRegistered.h) : Skipping function that returns a class/struct */
 
 /* Error while processing function "TypeNotRegistered" at Smp/Publication/TypeNotRegistered.h:32:15 (exported to Smp-C/Publication/TypeNotRegistered.h) : Skipping constructor */
 

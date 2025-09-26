@@ -39,14 +39,13 @@ CW(_IStructureType)
     );
 }
 
-/*
 void
 CW(AddField)
 (
     CW() * self,
     CW(CW_root_Smp, String8) name,
     CW(CW_root_Smp, String8) description,
-    CW(CW_root_Smp, Uuid) uuid,
+    CW(CW_root_Smp, Uuid) * uuid,
     CW(CW_root_Smp, UInt64) offset,
     CW(CW_root_Smp, ViewKind) view,
     CW(CW_root_Smp, Bool) state,
@@ -56,7 +55,7 @@ CW(AddField)
     static_cast<Smp::Publication::IStructureType *>(self)->AddField(
         static_cast<Smp::String8>(name),
         static_cast<Smp::String8>(description),
-        static_cast<Smp::Uuid>(uuid),
+        *static_cast<Smp::Uuid*>(uuid),
         static_cast<Smp::UInt64>(offset),
         static_cast<Smp::ViewKind>(view),
         static_cast<Smp::Bool>(state),
@@ -64,7 +63,6 @@ CW(AddField)
         static_cast<Smp::Bool>(output)
     );
 }
-*/
 
 /* Error while processing function "IStructureType" at Smp/Publication/IStructureType.h:37:15 (exported to Smp-C/Publication/IStructureType.h) : Skipping constructor */
 

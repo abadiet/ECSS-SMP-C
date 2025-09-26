@@ -46,14 +46,12 @@ CW(_IForcibleField)
     CW() * self
 );
 
-/*
 void
 CW(Force)
 (
     CW() * self,
-    CW(CW_root_Smp, AnySimple) value
+    CW(CW_root_Smp, AnySimple) * value
 );
-*/
 
 void
 CW(Unforce)

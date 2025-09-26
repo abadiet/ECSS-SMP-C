@@ -73,37 +73,24 @@ CW(GetParameterIndex)
     CW(CW_root_Smp, String8) parameterName
 );
 
-/*
 void
 CW(SetParameterValue)
 (
     CW() * self,
     CW(CW_root_Smp, Int32) index,
-    CW(CW_root_Smp, AnySimple) value
-);
-*/
-
-CW(CW_root_Smp, AnySimple)
-CW(GetParameterValue)
-(
-    CW() * self,
-    CW(CW_root_Smp, Int32) index
+    CW(CW_root_Smp, AnySimple) * value
 );
 
-/*
+/* Error while processing function "GetParameterValue" at Smp/./IRequest.h:102:32 (exported to Smp-C/IRequest.h) : Skipping function that returns a class/struct */
+
 void
 CW(SetReturnValue)
 (
     CW() * self,
-    CW(CW_root_Smp, AnySimple) value
+    CW(CW_root_Smp, AnySimple) * value
 );
-*/
 
-CW(CW_root_Smp, AnySimple)
-CW(GetReturnValue)
-(
-    CW() * self
-);
+/* Error while processing function "GetReturnValue" at Smp/./IRequest.h:120:32 (exported to Smp-C/IRequest.h) : Skipping function that returns a class/struct */
 
 /* Error while processing function "operator=" at Smp/./IRequest.h:34:11 (exported to Smp-C/IRequest.h) : Reference type is not supported: IRequest & */
 

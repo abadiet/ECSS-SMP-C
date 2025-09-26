@@ -253,26 +253,22 @@ CW(RegisterFactory)
     CW(CW_root_Smp, IFactory) * componentFactory
 );
 
-/*
 CW(CW_root_Smp, IComponent) *
 CW(CreateInstance)
 (
     CW() * self,
-    CW(CW_root_Smp, Uuid) uuid,
+    CW(CW_root_Smp, Uuid) * uuid,
     CW(CW_root_Smp, String8) name,
     CW(CW_root_Smp, String8) description,
     CW(CW_root_Smp, IComposite) * parent
 );
-*/
 
-/*
 CW(CW_root_Smp, IFactory) *
 CW(GetFactory)
 (
     CW() * self,
-    CW(CW_root_Smp, Uuid) uuid
+    CW(CW_root_Smp, Uuid) * uuid
 );
-*/
 
 const CW(CW_root_Smp, FactoryCollection) *
 CW(GetFactories)

@@ -55,24 +55,16 @@ CW(GetSize)
     CW() * self
 );
 
-CW(CW_root_Smp, AnySimple)
-CW(GetValue)
-(
-    CW() * self,
-    CW(CW_root_Smp, UInt64) index
-);
+/* Error while processing function "GetValue" at Smp/./ISimpleArrayField.h:50:32 (exported to Smp-C/ISimpleArrayField.h) : Skipping function that returns a class/struct */
 
-/*
 void
 CW(SetValue)
 (
     CW() * self,
     CW(CW_root_Smp, UInt64) index,
-    CW(CW_root_Smp, AnySimple) value
+    CW(CW_root_Smp, AnySimple) * value
 );
-*/
 
-/*
 void
 CW(GetValues)
 (
@@ -81,7 +73,6 @@ CW(GetValues)
     CW(CW_root_Smp, AnySimple) * values,
     CW(CW_root_Smp, UInt64) startIndex
 );
-*/
 
 void
 CW(SetValues)

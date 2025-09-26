@@ -75,55 +75,33 @@ CW(GetParameterIndex)
     ));
 }
 
-/*
 void
 CW(SetParameterValue)
 (
     CW() * self,
     CW(CW_root_Smp, Int32) index,
-    CW(CW_root_Smp, AnySimple) value
+    CW(CW_root_Smp, AnySimple) * value
 ) {
     static_cast<Smp::IRequest *>(self)->SetParameterValue(
         static_cast<Smp::Int32>(index),
-        static_cast<Smp::AnySimple>(value)
+        *static_cast<Smp::AnySimple*>(value)
     );
 }
-*/
 
-CW(CW_root_Smp, AnySimple)
-CW(GetParameterValue)
-(
-    CW() * self,
-    CW(CW_root_Smp, Int32) index
-) {
-    return static_cast<CW(CW_root_Smp, AnySimple)>(
-    static_cast<Smp::IRequest *>(self)->GetParameterValue(
-        static_cast<Smp::Int32>(index)
-    ));
-}
+/* Error while processing function "GetParameterValue" at Smp/./IRequest.h:102:32 (exported to Smp-C/IRequest.h) : Skipping function that returns a class/struct */
 
-/*
 void
 CW(SetReturnValue)
 (
     CW() * self,
-    CW(CW_root_Smp, AnySimple) value
+    CW(CW_root_Smp, AnySimple) * value
 ) {
     static_cast<Smp::IRequest *>(self)->SetReturnValue(
-        static_cast<Smp::AnySimple>(value)
+        *static_cast<Smp::AnySimple*>(value)
     );
 }
-*/
 
-CW(CW_root_Smp, AnySimple)
-CW(GetReturnValue)
-(
-    CW() * self
-) {
-    return static_cast<CW(CW_root_Smp, AnySimple)>(
-    static_cast<Smp::IRequest *>(self)->GetReturnValue(
-    ));
-}
+/* Error while processing function "GetReturnValue" at Smp/./IRequest.h:120:32 (exported to Smp-C/IRequest.h) : Skipping function that returns a class/struct */
 
 /* Error while processing function "operator=" at Smp/./IRequest.h:34:11 (exported to Smp-C/IRequest.h) : Reference type is not supported: IRequest & */
 

@@ -51,15 +51,13 @@ CW(GetEventArgType)
     CW() * self
 );
 
-/*
 void
 CW(Notify)
 (
     CW() * self,
     CW(CW_root_Smp, IObject) * sender,
-    CW(CW_root_Smp, AnySimple) arg
+    CW(CW_root_Smp, AnySimple) * arg
 );
-*/
 
 /* Error while processing function "IEventSink" at Smp/IEventSink.h:32:11 (exported to Smp-C/IEventSink.h) : Skipping constructor */
 

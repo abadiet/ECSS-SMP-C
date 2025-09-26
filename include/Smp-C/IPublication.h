@@ -105,7 +105,7 @@ CW(PublishProperty)
     CW() * self,
     CW(CW_root_Smp, String8) name,
     CW(CW_root_Smp, String8) description,
-    CW(CW_root_Smp, Uuid) typeUuid,
+    CW(CW_root_Smp, Uuid) * typeUuid,
     CW(CW_root_Smp, AccessKind) accessKind,
     CW(CW_root_Smp, ViewKind) view
 );

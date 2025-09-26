@@ -39,6 +39,7 @@ CW(_ITypeRegistry)
     );
 }
 
+/*
 CW(CW_root_Smp_Publication, IType) *
 CW(GetType)
 (
@@ -51,18 +52,18 @@ CW(GetType)
     ));
 }
 
-/*
 CW(CW_root_Smp_Publication, IType) *
 CW(GetType)
 (
     CW() * self,
-    CW(CW_root_Smp, Uuid) typeUuid
+    CW(CW_root_Smp, Uuid) * typeUuid
 ) {
     return static_cast<CW(CW_root_Smp_Publication, IType) *>(
     static_cast<Smp::Publication::ITypeRegistry *>(self)->GetType(
-        static_cast<Smp::Uuid>(typeUuid)
+        *static_cast<Smp::Uuid*>(typeUuid)
     ));
 }
+*/
 
 CW(CW_root_Smp_Publication, IType) *
 CW(AddFloatType)
@@ -70,7 +71,7 @@ CW(AddFloatType)
     CW() * self,
     CW(CW_root_Smp, String8) name,
     CW(CW_root_Smp, String8) description,
-    CW(CW_root_Smp, Uuid) typeUuid,
+    CW(CW_root_Smp, Uuid) * typeUuid,
     CW(CW_root_Smp, Float64) minimum,
     CW(CW_root_Smp, Float64) maximum,
     CW(CW_root_Smp, Bool) minInclusive,
@@ -82,7 +83,7 @@ CW(AddFloatType)
     static_cast<Smp::Publication::ITypeRegistry *>(self)->AddFloatType(
         static_cast<Smp::String8>(name),
         static_cast<Smp::String8>(description),
-        static_cast<Smp::Uuid>(typeUuid),
+        *static_cast<Smp::Uuid*>(typeUuid),
         static_cast<Smp::Float64>(minimum),
         static_cast<Smp::Float64>(maximum),
         static_cast<Smp::Bool>(minInclusive),
@@ -98,7 +99,7 @@ CW(AddIntegerType)
     CW() * self,
     CW(CW_root_Smp, String8) name,
     CW(CW_root_Smp, String8) description,
-    CW(CW_root_Smp, Uuid) typeUuid,
+    CW(CW_root_Smp, Uuid) * typeUuid,
     CW(CW_root_Smp, Int64) minimum,
     CW(CW_root_Smp, Int64) maximum,
     CW(CW_root_Smp, String8) unit,
@@ -108,7 +109,7 @@ CW(AddIntegerType)
     static_cast<Smp::Publication::ITypeRegistry *>(self)->AddIntegerType(
         static_cast<Smp::String8>(name),
         static_cast<Smp::String8>(description),
-        static_cast<Smp::Uuid>(typeUuid),
+        *static_cast<Smp::Uuid*>(typeUuid),
         static_cast<Smp::Int64>(minimum),
         static_cast<Smp::Int64>(maximum),
         static_cast<Smp::String8>(unit),
@@ -122,13 +123,13 @@ CW(AddEnumerationType)
     CW() * self,
     CW(CW_root_Smp, String8) name,
     CW(CW_root_Smp, String8) description,
-    CW(CW_root_Smp, Uuid) typeUuid
+    CW(CW_root_Smp, Uuid) * typeUuid
 ) {
     return static_cast<CW(CW_root_Smp_Publication, IEnumerationType) *>(
     static_cast<Smp::Publication::ITypeRegistry *>(self)->AddEnumerationType(
         static_cast<Smp::String8>(name),
         static_cast<Smp::String8>(description),
-        static_cast<Smp::Uuid>(typeUuid)
+        *static_cast<Smp::Uuid*>(typeUuid)
     ));
 }
 
@@ -138,8 +139,8 @@ CW(AddArrayType)
     CW() * self,
     CW(CW_root_Smp, String8) name,
     CW(CW_root_Smp, String8) description,
-    CW(CW_root_Smp, Uuid) typeUuid,
-    CW(CW_root_Smp, Uuid) itemTypeUuid,
+    CW(CW_root_Smp, Uuid) * typeUuid,
+    CW(CW_root_Smp, Uuid) * itemTypeUuid,
     CW(CW_root_Smp, UInt64) itemSize,
     CW(CW_root_Smp, UInt64) arrayCount,
     CW(CW_root_Smp, Bool) simpleArray
@@ -148,8 +149,8 @@ CW(AddArrayType)
     static_cast<Smp::Publication::ITypeRegistry *>(self)->AddArrayType(
         static_cast<Smp::String8>(name),
         static_cast<Smp::String8>(description),
-        static_cast<Smp::Uuid>(typeUuid),
-        static_cast<Smp::Uuid>(itemTypeUuid),
+        *static_cast<Smp::Uuid*>(typeUuid),
+        *static_cast<Smp::Uuid*>(itemTypeUuid),
         static_cast<Smp::UInt64>(itemSize),
         static_cast<Smp::UInt64>(arrayCount),
         static_cast<Smp::Bool>(simpleArray)
@@ -162,14 +163,14 @@ CW(AddStringType)
     CW() * self,
     CW(CW_root_Smp, String8) name,
     CW(CW_root_Smp, String8) description,
-    CW(CW_root_Smp, Uuid) typeUuid,
+    CW(CW_root_Smp, Uuid) * typeUuid,
     CW(CW_root_Smp, UInt64) length
 ) {
     return static_cast<CW(CW_root_Smp_Publication, IStringType) *>(
     static_cast<Smp::Publication::ITypeRegistry *>(self)->AddStringType(
         static_cast<Smp::String8>(name),
         static_cast<Smp::String8>(description),
-        static_cast<Smp::Uuid>(typeUuid),
+        *static_cast<Smp::Uuid*>(typeUuid),
         static_cast<Smp::UInt64>(length)
     ));
 }
@@ -180,13 +181,13 @@ CW(AddStructureType)
     CW() * self,
     CW(CW_root_Smp, String8) name,
     CW(CW_root_Smp, String8) description,
-    CW(CW_root_Smp, Uuid) typeUuid
+    CW(CW_root_Smp, Uuid) * typeUuid
 ) {
     return static_cast<CW(CW_root_Smp_Publication, IStructureType) *>(
     static_cast<Smp::Publication::ITypeRegistry *>(self)->AddStructureType(
         static_cast<Smp::String8>(name),
         static_cast<Smp::String8>(description),
-        static_cast<Smp::Uuid>(typeUuid)
+        *static_cast<Smp::Uuid*>(typeUuid)
     ));
 }
 
@@ -196,18 +197,17 @@ CW(AddClassType)
     CW() * self,
     CW(CW_root_Smp, String8) name,
     CW(CW_root_Smp, String8) description,
-    CW(CW_root_Smp, Uuid) typeUuid,
-    CW(CW_root_Smp, Uuid) baseClassUuid
+    CW(CW_root_Smp, Uuid) * typeUuid,
+    CW(CW_root_Smp, Uuid) * baseClassUuid
 ) {
     return static_cast<CW(CW_root_Smp_Publication, IClassType) *>(
     static_cast<Smp::Publication::ITypeRegistry *>(self)->AddClassType(
         static_cast<Smp::String8>(name),
         static_cast<Smp::String8>(description),
-        static_cast<Smp::Uuid>(typeUuid),
-        static_cast<Smp::Uuid>(baseClassUuid)
+        *static_cast<Smp::Uuid*>(typeUuid),
+        *static_cast<Smp::Uuid*>(baseClassUuid)
     ));
 }
-*/
 
 /* Error while processing function "operator=" at Smp/./Publication/ITypeRegistry.h:62:15 (exported to Smp-C/Publication/ITypeRegistry.h) : Reference type is not supported: ITypeRegistry & */
 

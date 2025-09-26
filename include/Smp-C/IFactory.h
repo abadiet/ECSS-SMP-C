@@ -50,11 +50,7 @@ CW(_IFactory)
     CW() * self
 );
 
-CW(CW_root_Smp, Uuid)
-CW(GetUuid)
-(
-    CW() * self
-);
+/* Error while processing function "GetUuid" at Smp/IFactory.h:50:27 (exported to Smp-C/IFactory.h) : Skipping function that returns a class/struct */
 
 CW(CW_root_Smp, String8)
 CW(GetTypeName)

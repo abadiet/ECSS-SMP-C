@@ -70,11 +70,7 @@ CW(GetPrimitiveTypeKind)
     CW() * self
 );
 
-CW(CW_root_Smp, Uuid)
-CW(GetUuid)
-(
-    CW() * self
-);
+/* Error while processing function "GetUuid" at Smp/Publication/IType.h:67:31 (exported to Smp-C/Publication/IType.h) : Skipping function that returns a class/struct */
 
 CW(CW_root_Smp, IField) *
 CW(Publish)

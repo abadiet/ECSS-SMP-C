@@ -45,11 +45,7 @@ CW(_InvalidAnyType)
     CW() * self
 );
 
-CW(CW_root_Smp, AnySimple)
-CW(GetInvalidValue)
-(
-    CW() * self
-);
+/* Error while processing function "GetInvalidValue" at Smp/InvalidAnyType.h:41:32 (exported to Smp-C/InvalidAnyType.h) : Skipping function that returns a class/struct */
 
 CW(CW_root_Smp, PrimitiveTypeKind)
 CW(GetExpectedType)

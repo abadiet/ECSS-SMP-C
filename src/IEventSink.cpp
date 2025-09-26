@@ -43,20 +43,18 @@ CW(GetEventArgType)
     ));
 }
 
-/*
 void
 CW(Notify)
 (
     CW() * self,
     CW(CW_root_Smp, IObject) * sender,
-    CW(CW_root_Smp, AnySimple) arg
+    CW(CW_root_Smp, AnySimple) * arg
 ) {
     static_cast<Smp::IEventSink *>(self)->Notify(
         static_cast<Smp::IObject *>(sender),
-        static_cast<Smp::AnySimple>(arg)
+        *static_cast<Smp::AnySimple*>(arg)
     );
 }
-*/
 
 /* Error while processing function "IEventSink" at Smp/IEventSink.h:32:11 (exported to Smp-C/IEventSink.h) : Skipping constructor */
 

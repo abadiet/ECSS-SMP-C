@@ -12,6 +12,7 @@ extern "C" {
 
 
 #include <stdint.h>
+#include <stdbool.h>
 
 
 /* ### root ### */

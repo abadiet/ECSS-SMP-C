@@ -75,28 +75,18 @@ CW(GetView)
     ));
 }
 
-CW(CW_root_Smp, AnySimple)
-CW(GetValue)
-(
-    CW() * self
-) {
-    return static_cast<CW(CW_root_Smp, AnySimple)>(
-    static_cast<Smp::IProperty *>(self)->GetValue(
-    ));
-}
+/* Error while processing function "GetValue" at Smp/IProperty.h:69:32 (exported to Smp-C/IProperty.h) : Skipping function that returns a class/struct */
 
-/*
 void
 CW(SetValue)
 (
     CW() * self,
-    CW(CW_root_Smp, AnySimple) value
+    CW(CW_root_Smp, AnySimple) * value
 ) {
     static_cast<Smp::IProperty *>(self)->SetValue(
-        static_cast<Smp::AnySimple>(value)
+        *static_cast<Smp::AnySimple*>(value)
     );
 }
-*/
 
 CW(CW_root_Smp, PrimitiveTypeKind)
 CW(GetPrimitiveTypeKind)

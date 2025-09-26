@@ -49,15 +49,7 @@ CW(GetPrimitiveTypeKind)
     ));
 }
 
-CW(CW_root_Smp, Uuid)
-CW(GetUuid)
-(
-    CW() * self
-) {
-    return static_cast<CW(CW_root_Smp, Uuid)>(
-    static_cast<Smp::Publication::IType *>(self)->GetUuid(
-    ));
-}
+/* Error while processing function "GetUuid" at Smp/Publication/IType.h:67:31 (exported to Smp-C/Publication/IType.h) : Skipping function that returns a class/struct */
 
 CW(CW_root_Smp, IField) *
 CW(Publish)

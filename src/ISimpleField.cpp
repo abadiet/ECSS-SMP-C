@@ -43,28 +43,18 @@ CW(GetPrimitiveTypeKind)
     ));
 }
 
-CW(CW_root_Smp, AnySimple)
-CW(GetValue)
-(
-    CW() * self
-) {
-    return static_cast<CW(CW_root_Smp, AnySimple)>(
-    static_cast<Smp::ISimpleField *>(self)->GetValue(
-    ));
-}
+/* Error while processing function "GetValue" at Smp/ISimpleField.h:43:32 (exported to Smp-C/ISimpleField.h) : Skipping function that returns a class/struct */
 
-/*
 void
 CW(SetValue)
 (
     CW() * self,
-    CW(CW_root_Smp, AnySimple) value
+    CW(CW_root_Smp, AnySimple) * value
 ) {
     static_cast<Smp::ISimpleField *>(self)->SetValue(
-        static_cast<Smp::AnySimple>(value)
+        *static_cast<Smp::AnySimple*>(value)
     );
 }
-*/
 
 /* Error while processing function "ISimpleField" at Smp/ISimpleField.h:30:11 (exported to Smp-C/ISimpleField.h) : Skipping constructor */
 

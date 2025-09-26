@@ -33,18 +33,16 @@ CW(_IForcibleField)
     );
 }
 
-/*
 void
 CW(Force)
 (
     CW() * self,
-    CW(CW_root_Smp, AnySimple) value
+    CW(CW_root_Smp, AnySimple) * value
 ) {
     static_cast<Smp::IForcibleField *>(self)->Force(
-        static_cast<Smp::AnySimple>(value)
+        *static_cast<Smp::AnySimple*>(value)
     );
 }
-*/
 
 void
 CW(Unforce)
