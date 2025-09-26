@@ -13,7 +13,7 @@
 #define CW_CONCAT3(a, b, c) a ## b ## c
 #define CW_CC3EX(a, b, c) CW_CONCAT3(a, b, c)
 #define CW_BUILD_SPACE_RELATIVE(a, b) CW_CC3EX(a, CW_SEPARATOR, b)
-#define CW_BUILD_SPACE_ABSOLUTE(b) b
+#define CW_BUILD_SPACE_ABSOLUTE(b) root_ ## b
 #define CW_SWITCH_BUILD_SPACE(_1, _2, name, ...) name
 #define CW_BUILD_SPACE(...) CW_SWITCH_BUILD_SPACE(__VA_ARGS__, CW_BUILD_SPACE_RELATIVE, CW_BUILD_SPACE_ABSOLUTE)(__VA_ARGS__)
 
@@ -38,6 +38,6 @@
 #define CW_SWITCH_NAME(_1, _2, name, ...) name
 #define CW(...) CW_SWITCH_NAME(__VA_OPT__(__VA_ARGS__,) CW_NAME_WITH_SPACE, CW_NAME_AT_SPACE, CW_NAME_SPACE)(__VA_ARGS__)
 
-#define CW_root CW_BUILD_SPACE(root)
+#define CW_root root
 
 #endif /* CWRAPPER_CWRAPPER_H */
