@@ -1,10 +1,14 @@
 # ECSS-SMP-C
-C Wrapper for the ESA ECSS SMP Standard
+C Wrapper for the ESA ECSS SMP Standard.
 
-Generated using [CWraPPer](https://github.com/abadiet/CWraPPer/)
+ECSS version: [ECSS SMP L1 (31 March 2025)](https://ecss.nl/wp-content/uploads/2025/08/ECSS_SMP_L1_(31March2025).zip).
+
+Generated using [CWraPPer](https://github.com/abadiet/CWraPPer/).
 
 > [!WARNING]
-> The SMP standard is not fully wrapped.
+> The SMP standard is not fully wrapped: templated objects, constructors and some operators.
+> 
+> Some definitions have been slighty change (e.g. use of pointer for class passed as argument).
 
 ## Generate
 ```bash
