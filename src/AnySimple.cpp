@@ -222,7 +222,7 @@ CW(operatorBool)
     CW() * self
 ) {
     return static_cast<CW(CW_root_Smp, Bool)>(
-    static_cast<Smp::AnySimple *>(self)->operator bool(
+    static_cast<Smp::AnySimple *>(self)->operator Smp::Bool(
     ));
 }
 
@@ -232,7 +232,7 @@ CW(operatorChar)
     CW() * self
 ) {
     return static_cast<CW(CW_root_Smp, Char8)>(
-    static_cast<Smp::AnySimple *>(self)->operator char(
+    static_cast<Smp::AnySimple *>(self)->operator Smp::Char8(
     ));
 }
 
@@ -242,7 +242,7 @@ CW(operatorString8)
     CW() * self
 ) {
     return static_cast<CW(CW_root_Smp, String8)>(
-    static_cast<Smp::AnySimple *>(self)->operator const char *(
+    static_cast<Smp::AnySimple *>(self)->operator Smp::String8(
     ));
 }
 
@@ -252,7 +252,7 @@ CW(operatorUInt8)
     CW() * self
 ) {
     return static_cast<CW(CW_root_Smp, UInt8)>(
-    static_cast<Smp::AnySimple *>(self)->operator unsigned char(
+    static_cast<Smp::AnySimple *>(self)->operator Smp::UInt8(
     ));
 }
 
@@ -262,7 +262,7 @@ CW(operatorUInt16)
     CW() * self
 ) {
     return static_cast<CW(CW_root_Smp, UInt16)>(
-    static_cast<Smp::AnySimple *>(self)->operator unsigned short(
+    static_cast<Smp::AnySimple *>(self)->operator Smp::UInt16(
     ));
 }
 
@@ -272,7 +272,7 @@ CW(operatorUInt32)
     CW() * self
 ) {
     return static_cast<CW(CW_root_Smp, UInt32)>(
-    static_cast<Smp::AnySimple *>(self)->operator unsigned int(
+    static_cast<Smp::AnySimple *>(self)->operator Smp::UInt32(
     ));
 }
 
@@ -282,7 +282,7 @@ CW(operatorUInt64)
     CW() * self
 ) {
     return static_cast<CW(CW_root_Smp, UInt64)>(
-    static_cast<Smp::AnySimple *>(self)->operator unsigned long long(
+    static_cast<Smp::AnySimple *>(self)->operator Smp::UInt64(
     ));
 }
 
@@ -292,7 +292,7 @@ CW(operatorInt8)
     CW() * self
 ) {
     return static_cast<CW(CW_root_Smp, Int8)>(
-    static_cast<Smp::AnySimple *>(self)->operator signed char(
+    static_cast<Smp::AnySimple *>(self)->operator Smp::Int8(
     ));
 }
 
@@ -302,7 +302,7 @@ CW(operatorInt16)
     CW() * self
 ) {
     return static_cast<CW(CW_root_Smp, Int16)>(
-    static_cast<Smp::AnySimple *>(self)->operator short(
+    static_cast<Smp::AnySimple *>(self)->operator Smp::Int16(
     ));
 }
 
@@ -312,7 +312,7 @@ CW(operatorInt32)
     CW() * self
 ) {
     return static_cast<CW(CW_root_Smp, Int32)>(
-    static_cast<Smp::AnySimple *>(self)->operator int(
+    static_cast<Smp::AnySimple *>(self)->operator Smp::Int32(
     ));
 }
 
@@ -322,7 +322,7 @@ CW(operatorInt64)
     CW() * self
 ) {
     return static_cast<CW(CW_root_Smp, Int64)>(
-    static_cast<Smp::AnySimple *>(self)->operator long long(
+    static_cast<Smp::AnySimple *>(self)->operator Smp::Int64(
     ));
 }
 
@@ -332,7 +332,7 @@ CW(operatorFloat32)
     CW() * self
 ) {
     return static_cast<CW(CW_root_Smp, Float32)>(
-    static_cast<Smp::AnySimple *>(self)->operator float(
+    static_cast<Smp::AnySimple *>(self)->operator Smp::Float32(
     ));
 }
 
@@ -342,7 +342,7 @@ CW(operatorFloat64)
     CW() * self
 ) {
     return static_cast<CW(CW_root_Smp, Float64)>(
-    static_cast<Smp::AnySimple *>(self)->operator double(
+    static_cast<Smp::AnySimple *>(self)->operator Smp::Float64(
     ));
 }
 
